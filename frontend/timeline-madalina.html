@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>DILY Settings</title>
+    <title>DILY Timeline</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/timeline.css">
-    <link rel="stylesheet" href="style/settings.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:700,400|Roboto:400,100,300,500,900'
         rel='stylesheet' type='text/css'>
 
@@ -21,9 +20,9 @@
             <div class="left-inside">
                 <div class="profile-picture"></div>
                 <h2>Andra Spiridon</h2>
-                <a class="custom-button" href="add-memory.html">Add Memory</a>
+                <a class="custom-button">Add Memory</a>
                  <ul class="action-list">
-                    <li>
+                    <li class="active">
                         <i class="fa fa-home" aria-hidden="true"></i>
                         <a href="timeline.html">Home</a>
                     </li>
@@ -35,7 +34,7 @@
                         <i class="fa fa-users" aria-hidden="true"></i>
                         <a href="friends.html">Friends</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <i class="fa fa-cog" aria-hidden="true"></i>
                         <a href="settings.html">Settings</a>
                     </li>
@@ -50,13 +49,11 @@
                 <div class="profile-picture"></div>
                 <ul class="action-list">
                     <li>
-                        <a href="add-memory.html">
                         <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="timeline.html">
-                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <i class="fa fa-home"  aria-hidden="true"></i> 
                         </a>
                     </li>
                      <li>
@@ -69,7 +66,7 @@
                         <i class="fa fa-users" aria-hidden="true"></i>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="settings.html">
                         <i class="fa fa-cog" aria-hidden="true"></i>
                         </a>
@@ -84,8 +81,7 @@
 
         </section>
 
-        <section class="right-container">
-            <div class="rigth-main">
+        <section class="right-container" >
             <header>
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <input type="text" placeholder="Search" class="search-input">
@@ -104,78 +100,88 @@
                         <div class="notification-body">
                             <div class="notification-row">
                                 <h5>Madalina Rusu liked your Wedding Memory</h5>
-                                <h6>24 May, 2017</h6>
+                                    <h6>24 May, 2017</h6>
                             </div>
                             <div class="notification-row">
                                 <h5>Ecaterina M added you to her memory</h5>
-                                <h6>1 April, 2017</h6>
+                                    <h6>1 April, 2017</h6>
                             </div>
                             <div class="notification-row">
                                 <h5>Alex T commented on your memory</h5>
-                                <h6>30 March, 2017</h6>
+                                    <h6>30 March, 2017</h6>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
-            
-            <div class="settings-container">
 
-                 <div class="content-wrapper-signup">
-                <form>
-                    <div class="change-profile-picture">
-                        <label>Profile picture</label>
-                        <a href="#" class="uploads-anchors"> Upload a picture</a>
-                        <a href="#" class="uploads-anchors"> Upload from Facebook</a>
-                        <a href="#" class="uploads-anchors"> Upload from Instagram</a>
-                        <a href="#" class="uploads-anchors"> Upload from Vimeo</a>
+            </header>
+            <div class="right-main"  onscroll="scrNav()">
+                <nav id="navbar" class="navbar">
+                    <ul class="nav-menu">
+                        <li>
+                            <a data-scroll="date1" href="#date1" class="dot active">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-scroll="date2" href="#date2" class="dot">
+                                <span>About me</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-scroll="date3" href="#date3" class="dot">
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-scroll="date4" href="#date4" class="dot">
+                                <span>Testimonials</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-scroll="date5" href="#date5" class="dot">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+
+
+                <section id="date1" class="slider-inside">
+                    <div class="slider-title">
+                        <h1>Trip to Paris</h1>
+                        <h4>Paris, France</h4>
+                        <h4>18 April, 2017</h4>
                     </div>
-                    <div class="input-pair">
-                  <div class="custom-input">
-                    <label>Name</label>
-                    <input type="text" value="Spiridon Andra" name="name" class="large-input" required>
+                    <div class="slider-body">
+                        <div class="slider-body-description">
+                            <p>Paris (nicknamed the City of light) is the capital city of France, and the largest city in France. The area is 105 sq km, and around 2.15 million people live there. If suburbs are counted, the population of the Paris area rises to 12 million people.
+
+The Seine river runs through the oldest part of Paris, and divides it into two parts, known as the Left Bank and the Right Bank. It is surrounded by many forests.
+
+Paris is also the center of French economy, politics, traffic and culture. Paris has many art museums and historical buildings. As a traffic center, Paris has a very good underground subway system (called the Metro). It also has two airports. The Metro was built in 1900, and its total length is more than 200 km.</p>
+                        </div>
+                        <div class="slider-body-images">
+
+                        </div>
                     </div>
-                     <div class="custom-input">
-                        <label>Username</label>
-                      <input type="text" name="username" value="andra.spiridon" required>
-                    </div>
-                 </div>
-                  
-                  <div class="input-pair">
-                    <div class="custom-input">
-                        <label>New password</label>
-                      <input type="password" name="password" value="new password" required>
-                    </div>
-                    <div class="custom-input">
-                        <label>Confirm password</label>
-                      <input type="password" name="password" value="confirm password" required>
-                    </div>
-                  </div>
-                  <div class="input-pair">
-                    <div class="custom-input">
-                    <label>Email</label>
-                      <input type="text" name="email" value="spiridonandra01@yahoo.com" required>
-                    </div>
-                    <div class="custom-input">
-                        <label>Date of birth</label>
-                      <input type="text" name="date-of-birth" value="18 Iunie 1996" required>
-                    </div>
-                    </div>
-                    
-                </form>
-                <button class="save-button">Save changes</button>
-              </div>
+                </section>
+
+                <section id="date2" class="slider-inside"></section>
+
+                <section id="date3" class="slider-inside"></section>
+
+                <section id="date4" class="slider-inside"></section>
+
+                <section id="date5" class="slider-inside"></section>
             </div>
-            </div>
+   
         </section>
     </div>
-
-     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-  <script src="js/main.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
     <script src="js/timeline.js"></script>
 </body>
 
