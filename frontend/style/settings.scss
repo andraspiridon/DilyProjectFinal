@@ -108,5 +108,9 @@ label{
      .input-pair{
        flex-direction: column !important;
     }
-    
+    .content-wrapper-signup {
+      .custom-input {
+        width: 80%;
+    }
+    }
 }

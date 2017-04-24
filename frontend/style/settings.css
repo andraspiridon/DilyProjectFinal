@@ -89,6 +89,9 @@ label {
 
 @media (max-width: 1024px) {
   .input-pair {
-    flex-direction: column !important; } }
+    flex-direction: column !important; }
+
+  .content-wrapper-signup .custom-input {
+    width: 80%; } }
 
 /*# sourceMappingURL=settings.css.map */
