@@ -1,0 +1,26 @@
+<html layout:decorator="layout" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content">
+    <form method="post" name="comment_form" id="comment_form" action="/users/create" role="form">
+        <div class="form-group">
+            <label for="user_id">Id</label>
+            <input required="true" type="number" class="form-control" id="user_id" name="user_id" />
+
+            <label for="name">Name</label>
+            <input required="true" type="text" class="form-control" id="name" name="name" />
+
+            <label for="username">Username</label>
+            <input required="true" type="text" class="form-control" id="username" name="username" />
+
+            <label for="password">Password</label>
+            <input required="true" type="password" class="form-control" id="password" name="password" />
+
+            <label for="email">Email</label>
+            <input required="true" type="text" class="form-control" id="email" name="email"/>
+            <label for="dateOfBirth">Date of Birth</label>
+            <input required="true" type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" />
+
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</html>

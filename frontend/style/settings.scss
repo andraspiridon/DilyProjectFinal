@@ -1,0 +1,42 @@
+.settings-container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+label{
+  padding-right: 15px;
+  color: #34495e;
+}
+
+input{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #EEEEEE;
+  width: 100%;
+  border: 0;
+  margin: 0 ;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+input:focus{
+  background: #CFD8DC;
+}
+input:hover{
+  background: #CFD8DC;
+}
+.custom-input{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  width: 100%;
+}
+form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+}

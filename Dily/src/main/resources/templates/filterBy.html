@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorator="layout">
+<div layout:fragment ="content">
+
+    <h3>Result: </h3>
+    <table>
+        <thead>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Username</td>
+        <td>Email</td>
+        <td>Password</td>
+        <td>Date of birth</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </thead>
+        <tr data-th-each ="user : ${users}">
+            <td data-th-text="${user.user_id}"></td>
+            <td data-th-text="${user.name}"></td>
+            <td data-th-text="${user.username}"></td>
+            <td data-th-text="${user.email}"></td>
+            <td data-th-text="${user.password}"></td>
+            <td data-th-text="${user.dateOfBirth}"></td>
+        </tr>
+    </table>
+</div>
+</html>

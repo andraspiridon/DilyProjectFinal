@@ -1,0 +1,13 @@
+<html layout:decorator="layout" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content">
+    <form method="post" name="comment_form" id="comment_form" action="/tags/update" role="form">
+        <div class="form-group">
+            <label for="tag_name">Name</label>
+            <input required="true" type="text" class="form-control" id="tag_name" name="tag_name" th:text="${tag.tag_name}"/>
+
+        </div>
+        <input type="hidden" id="tag_id" rows="5" class="form-control" name="tag_id" th:value="${tag.tag_id}"/>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</html>

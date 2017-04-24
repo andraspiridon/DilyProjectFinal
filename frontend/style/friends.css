@@ -1,0 +1,105 @@
+.tile {
+  width: 30%;
+  background-color: #EEEEEE;
+  height: 160px;
+  margin: 15px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 1px 4px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px; }
+  .tile .profile-picture {
+    width: 100px;
+    height: 100px;
+    background-size: 100px auto; }
+
+.tile:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22); }
+
+.tile-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around; }
+
+.tile-row {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between; }
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background: url("images/profile.jpg");
+  background-position: center;
+  background-size: 150px auto;
+  background-repeat: no-repeat; }
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  width: 70%; }
+
+.tile-container .tile-row:nth-child(1) .tile:nth-child(2) .profile-picture {
+  background: url("images/profile1.jpg");
+  background-position: center;
+  background-size: 100px auto; }
+.tile-container .tile-row:nth-child(1) .tile:nth-child(3) .profile-picture {
+  background: url("images/profile2.jpg");
+  background-position: center;
+  background-size: 100px auto; }
+.tile-container .tile-row:nth-child(2) .tile:nth-child(1) .profile-picture {
+  background: url("images/profile3.jpg");
+  background-position: center;
+  background-size: 80px auto; }
+.tile-container .tile-row:nth-child(2) .tile:nth-child(2) .profile-picture {
+  background: url("images/profile4.jpg");
+  background-position: center;
+  background-size: 120px auto; }
+.tile-container .tile-row:nth-child(2) .tile:nth-child(3) .profile-picture {
+  background: url("images/profile5.jpg");
+  background-position: center;
+  background-size: 100px auto; }
+.tile-container .tile-row:nth-child(3) .tile:nth-child(1) .profile-picture {
+  background: url("images/profile6.jpg");
+  background-position: center;
+  background-size: 100px auto; }
+.tile-container .tile-row:nth-child(3) .tile:nth-child(2) .profile-picture {
+  background: url("images/profile7.jpg");
+  background-position: center;
+  background-size: 150px auto; }
+.tile-container .tile-row:nth-child(3) .tile:nth-child(3) .profile-picture {
+  background: url("images/profile8.jpg");
+  background-position: center;
+  background-size: 100px auto; }
+.tile-container .tile-row:nth-child(4) .tile:nth-child(1) .profile-picture {
+  background: url("images/profile9.jpg");
+  background-position: center;
+  background-size: 100px auto; }
+.tile-container .tile-row:nth-child(4) .tile:nth-child(2) .profile-picture {
+  background: url("images/profile10.jpg");
+  background-position: center;
+  background-size: 100px auto; }
+.tile-container .tile-row:nth-child(4) .tile:nth-child(3) .profile-picture {
+  background: url("images/profile11.jpg");
+  background-position: center;
+  background-size: 130px auto; }
+
+@media (max-width: 1024px) {
+  .tile-row {
+    flex-direction: column; }
+
+  .tile {
+    width: 80%; } }
+
+/*# sourceMappingURL=friends.css.map */

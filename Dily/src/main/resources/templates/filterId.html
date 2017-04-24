@@ -1,0 +1,11 @@
+<html layout:decorator="layout" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content">
+    <form method="post" name="comment_form" id="comment_form" action="/users/filterById" role="form">
+        <div class="form-group">
+            <label for="filter_id">Type a number</label>
+            <input required="true" type="text" class="form-control" id="filter_id" name="filter_id" />
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</html>

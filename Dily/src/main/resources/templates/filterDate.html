@@ -1,0 +1,11 @@
+<html layout:decorator="layout" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content">
+    <form method="post" name="comment_form" id="comment_form" action="/users/filterByDate" role="form">
+        <div class="form-group">
+            <label for="filter_date">Choose a date</label>
+            <input required="true" type="date" class="form-control" id="filter_date" name="filter_date" />
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</html>

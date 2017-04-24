@@ -1,0 +1,15 @@
+<html layout:decorator="layout" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content">
+    <form method="post" name="comment_form" id="comment_form" action="/tags/create" role="form">
+        <div class="form-group">
+            <label for="tag_id">Id</label>
+            <input required="true" type="number" class="form-control" id="tag_id" name="tag_id" />
+
+            <label for="tag_name">Name</label>
+            <input type="text" class="form-control" id="tag_name" name="tag_name" />
+
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</html>

@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorator="layout">
+<div layout:fragment ="content">
+
+    <h3>Possible relatives: </h3>
+    <table>
+        <thead>
+        <td>Name</td>
+        <td>Email</td>
+        </thead>
+        <tr data-th-each ="user : ${users}">
+            <td data-th-text="${user.name}"></td>
+            <td data-th-text="${user.email}"></td>
+        </tr>
+    </table>
+</div>
+</html>

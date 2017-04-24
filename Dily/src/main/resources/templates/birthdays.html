@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorator="layout">
+<div layout:fragment ="content">
+
+    <h3>Who's birthday is today:  </h3>
+    <table>
+        <thead>
+        <td>Name</td>
+        </thead>
+        <tr data-th-each ="user : ${users}">
+            <td data-th-text="${user.name}"></td>
+        </tr>
+    </table>
+</div>
+</html>

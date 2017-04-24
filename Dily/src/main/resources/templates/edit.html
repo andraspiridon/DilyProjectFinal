@@ -1,0 +1,26 @@
+<html layout:decorator="layout" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content">
+    <form method="post" name="comment_form" id="comment_form" action="/users/update" role="form">
+        <div class="form-group">
+
+
+            <label for="name">Name</label>
+            <input required="true" type="text" class="form-control" id="name" name="name" th:text="${user.name}"/>
+
+            <label for="username">Username</label>
+            <input required="true" type="text" class="form-control" id="username" name="username" th:text="${user.username}"/>
+
+            <label for="password">Password</label>
+            <input required="true" type="password" class="form-control" id="password" name="password" th:text="${user.password}"/>
+
+            <label for="email">Email</label>
+            <input required="true" type="text" class="form-control" id="email" name="email" th:text="${user.email}"/>
+            <label for="dateOfBirth">Date of Birth</label>
+            <input required="true" type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" th:text="${user.dateOfBirth}"/>
+
+        </div>
+        <input type="hidden" id="userid" rows="5" class="form-control" name="user_id" th:value="${user.user_id}"/>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</html>
