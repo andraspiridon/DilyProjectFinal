@@ -528,7 +528,7 @@ input {
         }
         .slider-body-images{
            width:60%;
-           max-width: 60%;
+           padding:10px;
 
         }
         .slider-tags{
@@ -652,21 +652,28 @@ input {
 .cell img {
   display: block;
 }
+.grid{
+ max-height: 73vh;
+ overflow-x: auto;
+}
+
 
 
 @media screen and (min-width: 600px) {
   .grid {
+   
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    
   }
   .cell {
-    width: 50%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .cell {
-    width: calc(100% / 3);
+    width: 50%;
   }
 }

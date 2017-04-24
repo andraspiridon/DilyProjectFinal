@@ -448,7 +448,7 @@ input {
         color: #00897B; }
     .right-main .slider-body .slider-body-images {
       width: 60%;
-      max-width: 60%; }
+      padding: 10px; }
     .right-main .slider-body .slider-tags {
       width: 100%;
       height: 40px;
@@ -547,6 +547,10 @@ input {
 .cell img {
   display: block; }
 
+.grid {
+  max-height: 73vh;
+  overflow-x: auto; }
+
 @media screen and (min-width: 600px) {
   .grid {
     display: flex;
@@ -554,9 +558,9 @@ input {
     flex-direction: row; }
 
   .cell {
-    width: 50%; } }
+    width: 100%; } }
 @media screen and (min-width: 1000px) {
   .cell {
-    width: calc(100% / 3); } }
+    width: 50%; } }
 
 /*# sourceMappingURL=timeline.css.map */
