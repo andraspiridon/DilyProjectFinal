@@ -509,5 +509,7 @@ input {
   margin-top: 40px; }
 
 /* End Contact Styles */
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=timeline.css.map */
