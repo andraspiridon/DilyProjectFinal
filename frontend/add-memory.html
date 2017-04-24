@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>DILY Settings</title>
+    <title>DILY Tagged</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/timeline.css">
-    <link rel="stylesheet" href="style/settings.css">
+    <link rel="stylesheet" href="style/tagged.css">
+
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:700,400|Roboto:400,100,300,500,900'
         rel='stylesheet' type='text/css'>
 
@@ -21,13 +22,12 @@
             <div class="left-inside">
                 <div class="profile-picture"></div>
                 <h2>Andra Spiridon</h2>
-                <a class="custom-button" href="add-memory.html">Add Memory</a>
-                 <ul class="action-list">
+                <ul class="action-list">
                     <li>
                         <i class="fa fa-home" aria-hidden="true"></i>
                         <a href="timeline.html">Home</a>
                     </li>
-                     <li>
+                     <li class="active">
                         <i class="fa fa-tag" aria-hidden="true"></i>
                         <a href="tagged.html">Tagged</a>
                     </li>
@@ -35,7 +35,7 @@
                         <i class="fa fa-users" aria-hidden="true"></i>
                         <a href="friends.html">Friends</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <i class="fa fa-cog" aria-hidden="true"></i>
                         <a href="settings.html">Settings</a>
                     </li>
@@ -50,16 +50,11 @@
                 <div class="profile-picture"></div>
                 <ul class="action-list">
                     <li>
-                        <a href="add-memory.html">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
                         <a href="timeline.html">
                         <i class="fa fa-home" aria-hidden="true"></i>
                         </a>
                     </li>
-                     <li>
+                     <li class="active">
                          <a href="tagged.html">
                         <i class="fa fa-tag" aria-hidden="true"></i>
                          </a>
@@ -69,7 +64,7 @@
                         <i class="fa fa-users" aria-hidden="true"></i>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="settings.html">
                         <i class="fa fa-cog" aria-hidden="true"></i>
                         </a>
@@ -85,7 +80,7 @@
         </section>
 
         <section class="right-container">
-            <div class="rigth-main">
+            <div class="right-main">
             <header>
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <input type="text" placeholder="Search" class="search-input">
@@ -117,66 +112,16 @@
                         </div>
                     </div>
                 </div>
-            </header>
-            
-            <div class="settings-container">
 
-                 <div class="content-wrapper-signup">
-                <form>
-                    <div class="change-profile-picture">
-                        <label>Profile picture</label>
-                        <a href="#" class="uploads-anchors"> Upload a picture</a>
-                        <a href="#" class="uploads-anchors"> Upload from Facebook</a>
-                        <a href="#" class="uploads-anchors"> Upload from Instagram</a>
-                        <a href="#" class="uploads-anchors"> Upload from Vimeo</a>
-                    </div>
-                    <div class="input-pair">
-                  <div class="custom-input">
-                    <label>Name</label>
-                    <input type="text" value="Spiridon Andra" name="name" class="large-input" required>
-                    </div>
-                     <div class="custom-input">
-                        <label>Username</label>
-                      <input type="text" name="username" value="andra.spiridon" required>
-                    </div>
-                 </div>
-                  
-                  <div class="input-pair">
-                    <div class="custom-input">
-                        <label>New password</label>
-                      <input type="password" name="password" value="new password" required>
-                    </div>
-                    <div class="custom-input">
-                        <label>Confirm password</label>
-                      <input type="password" name="password" value="confirm password" required>
-                    </div>
-                  </div>
-                  <div class="input-pair">
-                    <div class="custom-input">
-                    <label>Email</label>
-                      <input type="text" name="email" value="spiridonandra01@yahoo.com" required>
-                    </div>
-                    <div class="custom-input">
-                        <label>Date of birth</label>
-                      <input type="text" name="date-of-birth" value="18 Iunie 1996" required>
-                    </div>
-                    </div>
-                    
-                </form>
-                <button class="save-button">Save changes</button>
-              </div>
-            </div>
+            </header>
+            <div class="add-memory-container">
             </div>
         </section>
     </div>
 
-     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-  <script src="js/main.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/timeline.js"></script>
+    <script src="js/tagged.js"></script>
 </body>
 
 </html>
