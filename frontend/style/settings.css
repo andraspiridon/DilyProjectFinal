@@ -1,8 +1,8 @@
-.settings-container {
-  padding: 30px;
+.custom-input {
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  justify-content: space-between;
+  padding-bottom: 15px;
+  width: 100%; }
 
 label {
   padding-right: 15px;
@@ -14,10 +14,11 @@ input {
   background: #EEEEEE;
   width: 100%;
   border: 0;
-  margin: 0;
+  margin: 0 0 15px;
   padding: 15px;
   box-sizing: border-box;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #00897B; }
 
 input:focus {
   background: #CFD8DC; }
@@ -25,17 +26,69 @@ input:focus {
 input:hover {
   background: #CFD8DC; }
 
-.custom-input {
+.settings-container {
+  padding-top: 80px;
   display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-  width: 100%; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: left; }
 
-form {
+.content-wrapper-signup {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 100%; }
+  border-radius: 5px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fafafa; }
+  .content-wrapper-signup .input-pair {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%; }
+  .content-wrapper-signup .custom-input {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+    width: 48%; }
+  .content-wrapper-signup form {
+    width: 100%; }
+
+.save-button {
+  width: 50%;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+  background-color: #00897B;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px; }
+
+label {
+  padding: 5px; }
+
+.change-profile-picture {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.uploads-anchors {
+  color: #00897B; }
+
+@media (max-width: 1024px) {
+  .input-pair {
+    flex-direction: column !important; } }
 
 /*# sourceMappingURL=settings.css.map */

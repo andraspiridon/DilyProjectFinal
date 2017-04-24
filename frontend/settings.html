@@ -83,6 +83,7 @@
         </section>
 
         <section class="right-container">
+            <div class="rigth-main">
             <header>
                 <i class="fa fa-search" aria-hidden="true"></i>
                 <input type="text" placeholder="Search" class="search-input">
@@ -115,18 +116,54 @@
                     </div>
                 </div>
             </header>
+            
             <div class="settings-container">
-                <h2 class="text-color">Settings</h2>
-                <hr>
+
+                 <div class="content-wrapper-signup">
                 <form>
+                    <div class="change-profile-picture">
+                        <label>Profile picture</label>
+                        <a href="#" class="uploads-anchors"> Upload a picture</a>
+                        <a href="#" class="uploads-anchors"> Upload from Facebook</a>
+                        <a href="#" class="uploads-anchors"> Upload from Instagram</a>
+                        <a href="#" class="uploads-anchors"> Upload from Vimeo</a>
+                    </div>
+                    <div class="input-pair">
                   <div class="custom-input">
-                    <input type="text" name="username" placeholder="username" required>
+                    <label>Name</label>
+                    <input type="text" value="Spiridon Andra" name="name" class="large-input" required>
+                    </div>
+                     <div class="custom-input">
+                        <label>Username</label>
+                      <input type="text" name="username" value="andra.spiridon" required>
+                    </div>
+                 </div>
+                  
+                  <div class="input-pair">
+                    <div class="custom-input">
+                        <label>New password</label>
+                      <input type="password" name="password" value="new password" required>
+                    </div>
+                    <div class="custom-input">
+                        <label>Confirm password</label>
+                      <input type="password" name="password" value="confirm password" required>
+                    </div>
                   </div>
-                  <div class="custom-input">
-                    <input type="password" name="password" placeholder="password" required>
-                  </div>
-                 
+                  <div class="input-pair">
+                    <div class="custom-input">
+                    <label>Email</label>
+                      <input type="text" name="email" value="spiridonandra01@yahoo.com" required>
+                    </div>
+                    <div class="custom-input">
+                        <label>Date of birth</label>
+                      <input type="text" name="date-of-birth" value="18 Iunie 1996" required>
+                    </div>
+                    </div>
+                    
                 </form>
+                <button class="save-button">Save changes</button>
+              </div>
+            </div>
             </div>
         </section>
     </div>
