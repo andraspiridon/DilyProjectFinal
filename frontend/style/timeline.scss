@@ -610,10 +610,10 @@ input {
         border-right: none!important;
     }
     .notification-dropdown{
-        width: 100vw;
-        
-        top:0 ;
-        right: 0 ;
+        width: 101vw !important;
+        height: 100vw !important;
+        top:0 !important;
+        right: 0 !important;
         transition: width 3s;
         .notification-body{
             min-height: 50vh;
@@ -621,8 +621,11 @@ input {
              box-shadow: 3px 1px 10px 0 rgba(0, 0, 0, 0.15);
         }
      
-        .notification-header{
-            height: 50px;
+        .notification-header, .notification-row{
+            height: 60px !important; 
+        }
+        .notification-row{
+            padding: 15px !important;
         }
     }
 }
