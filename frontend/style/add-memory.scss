@@ -1,0 +1,28 @@
+.add-memory-container{
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.description-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #EEEEEE;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #00897B;
+}
