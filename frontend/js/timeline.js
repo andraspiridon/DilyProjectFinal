@@ -6,9 +6,7 @@ function scrNav() {
         var id = $(this).attr('id'),
             offset = $(this).offset().top - 1,
             height = $(this).height();
-        console.log(id);
-        console.log(offset);
-        console.log(height);
+        console.log($(this).index());
         if (sTop >= offset && sTop < offset + height) {
             link.removeClass('active');
             $('#navbar').find('[data-scroll="' + id+ '"]').toggleClass('active');
