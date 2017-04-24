@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DILY Timeline</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/timeline.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:700,400|Roboto:400,100,300,500,900'
+        rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <section class="left-container">
+            <div class="icon-container">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div>
+            <div class="left-inside">
+                <div class="profile-picture"></div>
+                <h2>Andra Spiridon</h2>
+                <a class="custom-button">Add Memory</a>
+                 <ul class="action-list">
+                    <li class="active">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <a href="timeline.html">Home</a>
+                    </li>
+                     <li>
+                        <i class="fa fa-tag" aria-hidden="true"></i>
+                        <a href="tagged.html">Tagged</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <a href="friends.html">Friends</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <a href="settings.html">Settings</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <a href="index.html">Log out</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="hided-inside">
+                <div class="profile-picture"></div>
+                <ul class="action-list">
+                    <li>
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    </li>
+                    <li class="active">
+                        <a href="timeline.html">
+                        <i class="fa fa-home"  aria-hidden="true"></i> 
+                        </a>
+                    </li>
+                     <li>
+                         <a href="tagged.html">
+                        <i class="fa fa-tag" aria-hidden="true"></i>
+                         </a>
+                    </li>
+                    <li>
+                        <a href="friends.html">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="right-container" >
+            <header>
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Search" class="search-input">
+                <div class="logo">
+                    <h1>Digital Legacy Box</h1>
+                </div>
+                <div class="custom-notification">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <span class="counter">4</span>
+                    <div class="notification-dropdown">
+                        <div class="notification-header">
+                            <span class="triangle"></span>
+                            <h4>Notification</h4>
+                            <span class="notification-counter">4</span>
+                        </div>
+                        <div class="notification-body">
+                            <div class="notification-row">
+                                <h5>Madalina Rusu liked your Wedding Memory</h5>
+                                    <h6>24 May, 2017</h6>
+                            </div>
+                            <div class="notification-row">
+                                <h5>Ecaterina M added you to her memory</h5>
+                                    <h6>1 April, 2017</h6>
+                            </div>
+                            <div class="notification-row">
+                                <h5>Alex T commented on your memory</h5>
+                                    <h6>30 March, 2017</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <div class="right-main"  onscroll="scrNav()">
+                <nav id="navbar" class="navbar">
+                    <ul class="nav-menu">
+                        <li>
+                            <a data-scroll="date1" href="#date1" class="dot active">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-scroll="date2" href="#date2" class="dot">
+                                <span>About me</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-scroll="date3" href="#date3" class="dot">
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-scroll="date4" href="#date4" class="dot">
+                                <span>Testimonials</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-scroll="date5" href="#date5" class="dot">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+
+
+                <section id="date1" class="slider-inside">
+                    <div class="slider-title">
+                        <h1>Trip to Paris</h1>
+                        <h4>Paris, France</h4>
+                        <h4>18 April, 2017</h4>
+                    </div>
+                    <div class="slider-body">
+                        <div class="slider-body-description">
+                            <p>Paris (nicknamed the City of light) is the capital city of France, and the largest city in France. The area is 105 sq km, and around 2.15 million people live there. If suburbs are counted, the population of the Paris area rises to 12 million people.
+
+The Seine river runs through the oldest part of Paris, and divides it into two parts, known as the Left Bank and the Right Bank. It is surrounded by many forests.
+
+Paris is also the center of French economy, politics, traffic and culture. Paris has many art museums and historical buildings. As a traffic center, Paris has a very good underground subway system (called the Metro). It also has two airports. The Metro was built in 1900, and its total length is more than 200 km.</p>
+                        </div>
+                        <div class="slider-body-images">
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="date2" class="slider-inside"></section>
+
+                <section id="date3" class="slider-inside"></section>
+
+                <section id="date4" class="slider-inside"></section>
+
+                <section id="date5" class="slider-inside"></section>
+            </div>
+   
+        </section>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+    <script src="js/timeline.js"></script>
+</body>
+
+</html>
