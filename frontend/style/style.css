@@ -1,50 +1,463 @@
-/*
-Error: Invalid CSS after "<<<<<<< HEAD": expected "{", was "}"
-        on line 608 of style.scss
+* {
+  font-family: "Roboto", sans-serif; }
 
-603:     justify-content: center;
-604:     align-items: center;
-605: }
-606: 
-607: <<<<<<< HEAD
-608: }
-609: =======
-610: }
-611: 
-612: >>>>>>> 9f0b88653b58b15a1917b4c04e2049569c9d3f38
+body {
+  overflow-x: hidden; }
 
-Backtrace:
-style.scss:608
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:409:in `media_directive'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:222:in `special_directive'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:197:in `directive'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"<<<<<<< HEAD\": expected \"{\", was \"}\"\A         on line 608 of style.scss\A \A 603:     justify-content: center;\A 604:     align-items: center;\A 605: }\A 606: \A 607: <<<<<<< HEAD\A 608: }\A 609: =======\A 610: }\A 611: \A 612: >>>>>>> 9f0b88653b58b15a1917b4c04e2049569c9d3f38"; }
+h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem; }
+
+.my-header {
+  background-color: #00897B;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .my-header ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none; }
+    .my-header ul li {
+      padding: 0 15px; }
+      .my-header ul li a {
+        outline: none;
+        color: #fff; }
+        .my-header ul li a:hover {
+          outline: none;
+          text-decoration: none;
+          cursor: pointer; }
+      .my-header ul li:after, .my-header ul li:before {
+        backface-visibility: hidden;
+        border: 1px solid rgba(255, 255, 255, 0);
+        bottom: 0px;
+        content: " ";
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        transition: all 280ms ease-in-out;
+        width: 0; }
+      .my-header ul li:hover:after, .my-header ul li:hover:before {
+        backface-visibility: hidden;
+        border-color: #fff;
+        transition: width 350ms ease-in-out;
+        width: 100%; }
+      .my-header ul li:hover:before {
+        bottom: auto;
+        top: 0;
+        width: 100%; }
+
+.scroll-down {
+  margin-top: 45%;
+  height: 50px;
+  height: 50px; }
+
+/*banner*/
+header .banner {
+  margin-top: 60px;
+  background: url("images/dily.png") calc(100vh - 60px) no-repeat;
+  background-position: center;
+  background-size: 100vw auto;
+  height: calc(100vh - 60px);
+  position: relative;
+  z-index: -10; }
+
+/*about*/
+.about {
+  background: #eee; }
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7%; }
+
+.about-content h2 {
+  margin: 5%; }
+
+.about-text {
+  font-size: 2rem;
+  line-height: 2;
+  margin: 5% 0 7%; }
+
+.works {
+  padding-bottom: 3%;
+  background: #fff; }
+
+.works-thumb {
+  height: 300px; }
+
+.works h2 {
+  margin: 7% 0; }
+
+.skills {
+  background: #333;
+  text-align: center; }
+  .skills h2 {
+    margin: 7%;
+    color: #fff; }
+  .skills .skills-thumb {
+    margin-bottom: 5%; }
+
+footer {
+  background: url("images/photo3.jpg");
+  background-size: cover;
+  color: #fff; }
+  footer h2 {
+    margin-top: 7%; }
+
+.contacts-data {
+  margin: 3% 7%; }
+
+.contact-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.33rem;
+  padding-left: 7%; }
+
+@media screen and (min-width: 991px) {
+  header .banner {
+    background-position: center; } }
+@media screen and (max-width: 990px) {
+  header .banner-content {
+    text-align: center; }
+
+  .scroll-down {
+    display: none; }
+
+  .contacts-data {
+    text-align: center; } }
+@media screen and (max-width: 767px) {
+  header .banner-content h1 {
+    font-size: 4rem; }
+
+  header .banner-content h3 {
+    font-size: 2.5rem; }
+
+  header .social-list {
+    display: none; }
+
+  .block {
+    width: 65%;
+    margin: 20px auto; }
+
+  .skills img {
+    width: 65%; } }
+@media screen and (max-width: 491px) {
+  header .banner-content h1 {
+    font-size: 2.5rem; }
+
+  header .banner-content h3 {
+    font-size: 1.5rem; } }
+.custom-button {
+  border-radius: 4px;
+  width: 90px;
+  font-size: 18px;
+  height: 33px;
+  margin-right: 10px;
+  border: none;
+  font-family: "Roboto", sans-serif; }
+
+.header-buttons {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.menu {
+  padding: 0;
+  margin: 0; }
+
+.bg-color {
+  background-color: #00897B;
+  transition-duration: .5s; }
+
+.text-color {
+  color: #00897B;
+  transition-duration: .5s; }
+
+.wrapper {
+  min-width: 600px;
+  max-width: 900px;
+  margin: 0; }
+
+.tabs {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  padding: 0px;
+  margin: 0px;
+  background-color: #00897B;
+  border-radius: 5px; }
+  .tabs > li {
+    transition-duration: .25s;
+    display: table-cell;
+    list-style: none;
+    text-align: center;
+    padding: 20px 20px 25px 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: #34495e; }
+    .tabs > li:before {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 120%;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.3);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      transition-duration: .25s;
+      border-radius: 5px 5px 0 0; }
+    .tabs > li:hover:before {
+      -webkit-transform: translateY(70%);
+      transform: translateY(70%); }
+    .tabs > li.active {
+      color: #34495e;
+      background-color: #fafafa;
+      border-radius: 5px; }
+      .tabs > li.active:before {
+        transition-duration: .5s;
+        background-color: #fafafa;
+        -webkit-transform: translateY(0);
+        transform: translateY(0); }
+
+.tab__content {
+  background-color: #fafafa;
+  position: relative;
+  width: 100%;
+  border-radius: 5px; }
+  .tab__content > li {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    list-style: none; }
+    .tab__content > li .content__wrapper:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-radius: 5px;
+      width: 100%;
+      padding: 20px 40px 40px 20px;
+      background-color: #fafafa; }
+  .tab__content .content-wrapper-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fafafa; }
+    .tab__content .content-wrapper-signup .input-pair {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      width: 100%; }
+    .tab__content .content-wrapper-signup .custom-input {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      width: 100%; }
+    .tab__content .content-wrapper-signup form {
+      width: 100%; }
+    .tab__content .content-wrapper-signup .custom-button {
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      outline: 0;
+      background: #4CAF50;
+      width: 100%;
+      height: 50px;
+      border: 0;
+      padding: 15px;
+      color: #FFFFFF;
+      font-size: 14px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer; }
+    .tab__content .content-wrapper-signup input {
+      width: 95%; }
+
+.content__wrapper h2 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 300; }
+.content__wrapper .custom-button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  height: 50px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer; }
+
+.modal-dialog {
+  width: 50%;
+  height: 80%; }
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  background: transparent;
+  box-shadow: none;
+  border: none; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%; }
+
+.custom-input {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  width: 100%; }
+
+label {
+  padding-right: 15px;
+  color: #34495e; }
+
+input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #EEEEEE;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px; }
+
+.large-input {
+  width: 98% !important;
+  height: 50px;
+  padding: 15px; }
+
+input:focus {
+  background: #CFD8DC; }
+
+input:hover {
+  background: #CFD8DC; }
+
+.checkbox {
+  padding-left: 20px; }
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  position: absolute;
+  margin-left: -75px; }
+
+.forgot-pass {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif; }
+
+.profile-picture1 {
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 100%;
+  background: url("images/profile.jpg");
+  background-position: center;
+  background-size: 300px auto;
+  background-repeat: no-repeat; }
+
+.profile-picture2 {
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 100%;
+  background: url("images/profile/profile1.jpg");
+  background-position: center;
+  background-size: 300px auto;
+  background-repeat: no-repeat; }
+
+.pictures {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.about-dily {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.timeline-img {
+  vertical-align: middle;
+  padding-right: 20px;
+  height: 500px; }
+
+.about-text-white {
+  font-size: 2rem;
+  line-height: 2;
+  margin: 5% 0 7%;
+  color: white; }
+
+.memory-img {
+  vertical-align: middle;
+  padding: 20px;
+  height: 70%;
+  width: 50%; }
+
+.form-control {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: #EEEEEE;
+  height: 50px;
+  margin-bottom: 30px;
+  width: 98%; }
+  .form-control:focus {
+    box-shadow: none;
+    outline: none; }
+  .form-control option {
+    color: #00897B; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: ''; }
+  select option {
+    line-height: 30px; }
+
+@media (max-width: 1024px) {
+  .about-dily {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+/*# sourceMappingURL=style.css.map */
