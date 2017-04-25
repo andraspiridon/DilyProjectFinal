@@ -663,3 +663,12 @@ select {
     }
 
 }
+@media(max-width:1024px){
+    .about-dily{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+}

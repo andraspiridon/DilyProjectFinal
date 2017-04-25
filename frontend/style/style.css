@@ -573,4 +573,11 @@ select {
   select option {
     line-height: 30px; }
 
+@media (max-width: 1024px) {
+  .about-dily {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
 /*# sourceMappingURL=style.css.map */
