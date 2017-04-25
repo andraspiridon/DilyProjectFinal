@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>DILY Timeline</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/timeline.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:700,400|Roboto:400,100,300,500,900'
@@ -118,7 +120,7 @@
                 </div>
 
             </header>
-            <div class="right-main" onscroll="scrNav()">
+            <div class="right-main" onscroll="scrNav()" >
                 <nav id="navbar" class="navbar">
                     <ul class="nav-menu">
                         <li>
@@ -146,8 +148,9 @@
                     <div class="slider-body">
                         <div class="slider-body-description">
                             <div class="slider-buttons">
-                                <i class="fa fa-comments" aria-hidden="true"></i>
-                                <i class="fa fa-tags" aria-hidden="true"></i>
+                                <i class="fa fa-comments" data-toggle="modal" href="#myModal"></i>
+                                <i class="fa fa-tags"  data-toggle="modal" href="#myModal2" aria-hidden="true"></i>
+                                <i class="fa fa-pencil"  data-toggle="modal" href="#myModal3" aria-hidden="true"></i>
                             </div>
                             <div class="slider-title">
                                 <h1>Trip to Paris</h1>
@@ -200,6 +203,11 @@
                 <section id="date2" class="slider-inside">
                     <div class="slider-body">
                         <div class="slider-body-description">
+                            <div class="slider-buttons">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                <i class="fa fa-tags" aria-hidden="true"></i>
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </div>
                             <div class="slider-title">
                                 <h1>European Parliament</h1>
                                 <h4>Strasbourg, France</h4>
@@ -242,6 +250,11 @@
                 <section id="date3" class="slider-inside">
                     <div class="slider-body">
                         <div class="slider-body-description">
+                            <div class="slider-buttons">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                <i class="fa fa-tags" aria-hidden="true"></i>
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </div>
                             <div class="slider-title">
                                 <h1>Trip to Budapest</h1>
                                 <h4>Budapest, Hungary</h4>
@@ -288,6 +301,11 @@
                 <section id="date4" class="slider-inside">
                     <div class="slider-body">
                         <div class="slider-body-description">
+                            <div class="slider-buttons">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                <i class="fa fa-tags" aria-hidden="true"></i>
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </div>
                             <div class="slider-title">
                                 <h1>Trip to Prague</h1>
                                 <h4>Prague, Czech Republic</h4>
@@ -330,6 +348,11 @@
                 <section id="date5" class="slider-inside">
                     <div class="slider-body">
                         <div class="slider-body-description">
+                            <div class="slider-buttons">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                <i class="fa fa-tags" aria-hidden="true"></i>
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </div>
                             <div class="slider-title">
                                 <h1>Lovely winter</h1>
                                 <h4>Maramures, Romania</h4>
@@ -373,8 +396,64 @@
 
                 </section>
             </div>
-
         </section>
+    
+    </div>
+  
+    <div id="myModal" class="comment-modal modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-title"><h2>Comments</h2></div>
+                    <div class="comments-container">
+                        <div class="comment">
+                            <div class="profile-picture"></div>
+                            <p class="comment-text">This is a very long comment that I made to fill this empty container. also, you have great pictures here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="myModal2" class="tagged-modal modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-title"><h2>Comments</h2></div>
+                    <div class="comments-container">
+                        <div class="comment">
+                            <div class="profile-picture"></div>
+                            <p class="comment-text">This is a very long comment that I made to fill this empty container. also, you have great pictures here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="myModal3" class="edit-modal modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-title"><h2>Comments</h2></div>
+                    <div class="comments-container">
+                        <div class="comment">
+                            <div class="profile-picture"></div>
+                            <p class="comment-text">This is a very long comment that I made to fill this empty container. also, you have great pictures here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
