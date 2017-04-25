@@ -58,10 +58,10 @@ nav.navbar {
 /*social list end*/
 /*banner*/
 header .banner {
-  background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/header1-background_zpsdlk7p04z.jpg") 70% no-repeat;
+  background: url("images/dily.png") 70% no-repeat;
   background-position: top;
-  background-size: 100%;
-  height: 55%;
+  background-size: cover;
+  height: 70%;
   position: relative;
   z-index: -10; }
 
@@ -72,16 +72,6 @@ header .banner {
   text-transform: uppercase;
   margin-top: 17%;
   letter-spacing: 0.4rem; }
-
-.banner-content h1 {
-  font-size: 5rem;
-  font-weight: bold; }
-
-.banner-content h3 {
-  font-size: 3rem;
-  margin: 5% 0;
-  color: #eeeeee;
-  font-weight: bold; }
 
 /*banner end*/
 /*header end*/
@@ -119,30 +109,6 @@ header .banner {
 
 .works-thumb {
   height: 300px; }
-
-#work-1 {
-  background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/twitch_zpscblks89r.jpg") no-repeat 100%;
-  background-size: cover; }
-
-#work-2 {
-  background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/weather_zpso9kxmj13.jpg") no-repeat 100%;
-  background-size: cover; }
-
-#work-3 {
-  background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/tribute_zpsnwcehwkk.jpg") no-repeat 100%;
-  background-size: cover; }
-
-#work-4 {
-  background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/wikisearch_zps7uvspjn1.jpg") no-repeat 100%;
-  background-size: cover; }
-
-#work-5 {
-  background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/quote_zpsk9hgyziu.jpg") no-repeat 100%;
-  background-size: cover; }
-
-#work-6 {
-  background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/photoblog_zpsvvj8jgc2.jpg") no-repeat 100%;
-  background-size: cover; }
 
 .block::after, .block::before {
   content: '';
@@ -242,7 +208,7 @@ header .banner {
 
 /*footer*/
 footer {
-  background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/footer-bg_zps1imhqalh.jpg");
+  background: url("images/photo3.jpg");
   -webkit-background-size: cover;
   background-size: cover;
   color: #fff; }
