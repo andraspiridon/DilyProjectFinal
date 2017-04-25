@@ -23,6 +23,8 @@
   align-items: center;
   text-align: center;
   justify-content: space-around; }
+  .tile-container h2, .tile-container h3, .tile-container h5 {
+    color: #00897B; }
 
 .tile-row {
   width: 100%;
@@ -100,7 +102,10 @@
     flex-direction: column; }
 
   .tile {
-    width: 80%; } }
+    width: 80%; }
+
+  .tile-container h3, .tile-container h5 {
+    color: #7f8c8d; } }
 a {
   text-decoration: none; }
 

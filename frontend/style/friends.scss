@@ -29,6 +29,9 @@
     align-items: center;
     text-align: center;
     justify-content: space-around;
+    h2,h3,h5{
+        color: #00897B;
+    }
 }
 
 .tile-row{
@@ -152,6 +155,11 @@
     }
     .tile{
         width: 80%;
+    }
+    .tile-container{
+    h3,h5{
+        color:#7f8c8d
+    }
     }
 }
 
