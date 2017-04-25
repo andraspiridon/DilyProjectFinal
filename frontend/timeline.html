@@ -8,6 +8,8 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/timeline.css">
+    <link rel="stylesheet" href="style/add-memory.css">
+    <link rel="stylesheet" href="style/settings.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:700,400|Roboto:400,100,300,500,900'
         rel='stylesheet' type='text/css'>
 
@@ -463,19 +465,66 @@
                 </div>
             </div>
     </div>
+    </div>
     <div id="myModal3" class="edit-modal modal fade" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="modal-title"><h2>Comments</h2></div>
-                    <div class="comments-container">
-                        <div class="comment">
-                            <div class="profile-picture"></div>
-                            <p class="comment-text">This is a very long comment that I made to fill this empty container. also, you have great pictures here</p>
-                        </div>
-                       
+                    <div class="modal-title"><h2>Edit memory</h2></div>
+                   <div class="edit-memory-container">
+                    <div class="content-wrapper-signup">
+                        <form>
+                            <div class="change-profile-picture">
+                                <select class="form-control" id="sel1">
+                                    <option>Upload a picture</option>
+                                    <option>Upload from Facebook</option>
+                                    <option>Upload from Instagram</option>
+                                    <option>Upload from Vimeo</option>
+                                </select>
+                                <i class="fa fa-upload" aria-hidden="true"></i>
+                            </div>
+                            
+                            <div class="input-pair">
+                                <div class="custom-input">
+                                    <label>Title</label>
+                                    <input type="text" value="Trip to Paris" name="title" class="large-input" required>
+                                </div>
+                                <div class="custom-input">
+                                    <label>Location</label>
+                                    <input type="text" name="location" value="Paris, France" required>
+                                </div>
+                            </div>
+
+                            <div class="input-pair">
+                                <div class="custom-input">
+                                    <label>Date</label>
+                                    <input type="text" name="date" value="18 April 2017" required>
+                                </div>
+                                <div class="custom-input">
+                                    <label>Tags</label>
+                                    <input type="text" name="tags" value="#paris #friends #snowy #besttrip" required>
+                                </div>
+                            </div>
+                            <div class="input-pair">
+                                <div class="description-input">
+                                    <label>Description</label>
+                                    <textarea>Paris (nicknamed the City of light) is the capital city of France, and the largest city in France. The area is 105 sq km, and around 2.15 million people live there. If suburbs are counted, the population of the Paris area rises to 12 million people. The Seine river runs through the oldest part of Paris, and divides it into two parts, known as the Left Bank and the Right Bank. It is surrounded by many forests. Paris is also the center of French economy, politics, traffic and culture. Paris has many art museums and historical buildings. As a traffic center, Paris has a very good underground subway system (called the Metro). It also has two airports. The Metro was built in 1900, and its total length is more than 200 km </textarea>
+                                </div>
+                            </div>
+
+                            <div class="input-pair">
+                                <div class="description-input">
+                                    <label>Tag friends</label>
+                                    <input type="text" name="friends" placeholder="Search.." required>
+                                </div>
+                            </div>
+
+
+                        </form>
+                        <button class="save-button"><a href="timeline.html">Edit memory<a</button>
+                    </div>
                     </div>
                 </div>
             </div>
