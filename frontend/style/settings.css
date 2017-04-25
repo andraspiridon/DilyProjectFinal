@@ -75,14 +75,38 @@ input:hover {
 label {
   padding: 5px; }
 
+.form-control {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: #EEEEEE;
+  height: 50px; }
+  .form-control:focus {
+    box-shadow: none;
+    outline: none; }
+  .form-control option {
+    color: #00897B; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: ''; }
+  select option {
+    line-height: 30px; }
+
 .change-profile-picture {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  text-align: center;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 20px; }
+  .change-profile-picture i {
+    color: #00897B;
+    font-size: 20px;
+    padding-left: 10px; }
+    .change-profile-picture i:hover {
+      cursor: pointer; }
 
 .uploads-anchors {
   color: #00897B; }
