@@ -551,4 +551,26 @@ input:hover {
   height: 70%;
   width: 50%; }
 
+.form-control {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: #EEEEEE;
+  height: 50px;
+  margin-bottom: 30px;
+  width: 98%; }
+  .form-control:focus {
+    box-shadow: none;
+    outline: none; }
+  .form-control option {
+    color: #00897B; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: ''; }
+  select option {
+    line-height: 30px; }
+
 /*# sourceMappingURL=style.css.map */
