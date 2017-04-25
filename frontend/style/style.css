@@ -1,6 +1,6 @@
-* {
-  font-family: 'Roboto'; }
-
+/*fonts*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+/*global*/
 .navbar-default .navbar-nav > .active > a {
   background-color: #ccc; }
 
@@ -20,6 +20,7 @@ h2 {
 /*header navbar*/
 nav.navbar {
   background: #fff;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.4rem; }
 
@@ -66,7 +67,7 @@ header .banner {
 
 .banner-content {
   color: #fff;
-  font-family: "Lato", serif;
+  font-family: "Roboto", sans-serif;
   text-align: right;
   text-transform: uppercase;
   margin-top: 17%;
@@ -89,8 +90,12 @@ header .banner {
   background: #eee; }
 
 .about-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 7%;
-  font-family: "Lato", serif; }
+  font-family: "Roboto", sans-serif; }
 
 .about-content h2 {
   margin: 5%; }
@@ -165,7 +170,7 @@ header .banner {
 
 .works-caption {
   text-align: center;
-  font-family: "Lato", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.4rem;
   position: absolute;
@@ -200,6 +205,51 @@ header .banner {
   margin-bottom: 5%; }
 
 /*skills end*/
+/*social list main*/
+.social-footer {
+  background: #fff; }
+
+.social-footer h2 {
+  margin: 5% 0 3%; }
+
+.social-footer .social-list {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 5%; }
+
+.social-footer .social-list li a {
+  display: block;
+  position: relative;
+  border: 2px solid #444;
+  transform: rotate(45deg);
+  width: 60px;
+  height: 60px; }
+
+.social-footer .social-list li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 15px; }
+
+.social-footer .social-list li a i {
+  margin-top: 5px;
+  color: #444; }
+
+.social-footer .social-list li:hover i {
+  color: #ffb424; }
+
+.social-footer .social-list .fa-facebook {
+  padding: 2px 0 0 0; }
+
+/*footer*/
+footer {
+  background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/footer-bg_zps1imhqalh.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff; }
+
+footer h2 {
+  margin-top: 7%; }
+
 .contact {
   margin: 5% 0; }
 
@@ -221,13 +271,48 @@ header .banner {
   padding-left: 10px; }
 
 .contact-text {
-  font-family: "Lato", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.33rem;
   padding-left: 7%; }
 
 /*footer end*/
+/* media queries */
+@media screen and (min-width: 991px) {
+  header .banner {
+    background-position: center; } }
+@media screen and (max-width: 990px) {
+  header .banner-content {
+    text-align: center; }
+
+  .scroll-down {
+    display: none; }
+
+  .contacts-data {
+    text-align: center; } }
+@media screen and (max-width: 767px) {
+  header .banner-content h1 {
+    font-size: 4rem; }
+
+  header .banner-content h3 {
+    font-size: 2.5rem; }
+
+  header .social-list {
+    display: none; }
+
+  .block {
+    width: 65%;
+    margin: 20px auto; }
+
+  .skills img {
+    width: 65%; } }
+@media screen and (max-width: 491px) {
+  header .banner-content h1 {
+    font-size: 2.5rem; }
+
+  header .banner-content h3 {
+    font-size: 1.5rem; } }
 .custom-button {
   border-radius: 4px;
   width: 90px;
@@ -235,7 +320,7 @@ header .banner {
   height: 33px;
   margin-right: 10px;
   border: none;
-  font: small-caps 18px 'Lato', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .header-buttons {
   width: 50%;
@@ -451,5 +536,53 @@ input:hover {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif; }
+
+.profile-picture1 {
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 100%;
+  background: url("images/profile.jpg");
+  background-position: center;
+  background-size: 300px auto;
+  background-repeat: no-repeat; }
+
+.profile-picture2 {
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 100%;
+  background: url("images/profile/profile1.jpg");
+  background-position: center;
+  background-size: 300px auto;
+  background-repeat: no-repeat; }
+
+.pictures {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.about-dily {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.timeline-img {
+  vertical-align: middle;
+  padding-right: 20px;
+  height: 500px; }
+
+.about-text-white {
+  font-size: 2rem;
+  line-height: 2;
+  margin: 5% 0 7%;
+  color: white; }
+
+.memory-img {
+  vertical-align: middle;
+  padding: 20px;
+  height: 70%;
+  width: 50%; }
 
 /*# sourceMappingURL=style.css.map */
