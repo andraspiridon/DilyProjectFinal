@@ -96,7 +96,14 @@ body {
   padding: 0;
   font-family: 'Roboto';
   font-weight: normal;
-  color: #B2DFDB; }
+  color: #B2DFDB;
+  outline: none;
+  text-decoration: none; }
+
+a {
+  color: #B2DFDB;
+  outline: none;
+  text-decoration: none; }
 
 body {
   width: 100%;
@@ -492,10 +499,33 @@ input {
 .cell img {
   display: block; }
 
-.tagged-modal {
-  width: 500px;
-  height: 500px;
-  background-color: red; }
+.modal-title {
+  font-weight: 100;
+  text-align: center;
+  color: #00897B; }
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px; }
+  .comments-container .comment {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #95a5a6; }
+    .comments-container .comment p {
+      width: 80%;
+      margin: 0;
+      padding: 0;
+      color: #7f8c8d; }
+  .comments-container .profile-picture {
+    width: 60px;
+    height: 60px;
+    min-height: 60px;
+    background-size: 60px auto;
+    margin-right: 15px; }
 
 @media screen and (min-width: 600px) {
   .grid {
