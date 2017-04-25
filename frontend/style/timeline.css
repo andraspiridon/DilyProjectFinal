@@ -332,7 +332,7 @@ input {
       color: #00897B; }
     .right-container header .search-input {
       display: none;
-      width: 88%;
+      width: 30%;
       height: 35px;
       margin-left: 10px;
       padding-left: 10px;
@@ -348,6 +348,8 @@ input {
       right: 99px; }
     .right-container.expand header {
       width: 95%; }
+    .right-container.expand .navbar {
+      right: 59px !important; }
 
 .slider-container {
   width: 93%;
@@ -437,7 +439,7 @@ input {
   position: fixed;
   z-index: 999;
   top: 50%;
-  right: 50px;
+  right: 52px;
   transform: translateY(-50%); }
 
 .navbar .nav-menu {
