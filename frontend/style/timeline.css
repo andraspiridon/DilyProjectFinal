@@ -624,5 +624,30 @@ input {
       height: 60px !important; }
     .notification-dropdown .notification-row {
       padding: 15px !important; } }
+.tag-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px; }
+  .tag-container .tag {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 4px;
+    width: 50%; }
+    .tag-container .tag p {
+      width: 80%;
+      margin: 0;
+      padding: 0;
+      color: #7f8c8d; }
+  .tag-container .profile-picture {
+    width: 60px;
+    height: 60px;
+    background-size: 60px auto;
+    margin-right: 15px; }
+  .tag-container .tag-pair {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
 
 /*# sourceMappingURL=timeline.css.map */
